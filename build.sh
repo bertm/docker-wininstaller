@@ -53,7 +53,7 @@ task "Unpacking wininstaller" \
     eval "tar xzf master.tar.gz && rm master.tar.gz && mv wininstaller-innosetup-master installer"
 
 task "Fetching freenet.jar" \
-    wget -O freenet.jar "$FREENET_URL"
+    wget -O installer/install_node/freenet.jar "$FREENET_URL"
 task "Fetching seednodes.fref" \
     wget -O installer/install_node/seednodes.fref https://downloads.freenetproject.org/alpha/opennet/seednodes.fref
 
